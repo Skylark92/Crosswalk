@@ -53,7 +53,7 @@ main #version {
 #container .msg-bg {
   width: 324px;
   height: 150px;
-  background-image: url("resources/images/speech_bubble.svg");
+  background-image: url("../images/speech_bubble.svg");
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
