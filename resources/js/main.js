@@ -39,7 +39,7 @@ try {
 }
 
 async function updateSignal() {
-  const TIME_DIFF = 150;
+  const TIME_DIFF = 70;
   const STOP_TIME = 484;
   const GO_TIME = 1120;
   let signal;
