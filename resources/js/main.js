@@ -62,8 +62,11 @@ async function updateSignal() {
   if (!(signal && time)) return;
 
   if (signal === 'stop-And-Remain') {
-    if (time < STOP_TIME - TIME_DIFF) {
-      sign.on(time);
+    if (time < 70) {
+      sign.off(GO_TIME + time);
+    }
+    else if (time < STOP_TIME - TIME_DIFF) {
+      sign.on(time - 70);
     }
     else {
       sign.off(time - (STOP_TIME - TIME_DIFF));
